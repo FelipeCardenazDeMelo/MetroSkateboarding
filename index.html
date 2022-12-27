@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTS | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <button class="cabecalho_menu" aria-label="Menu" onclick="menuOpen()"><i></i></button>
+        <img src="assets/img/logo.svg" alt="Logo da MTS" class="cabecalho_logo">
+        <p class="cabecalho_perfil" onclick="opcoes()" >Felipe Melo</p>
+        <button class="cabecalho_notificacao" aria-label="Notificação"><i></i></button>
+        <nav class="menu_perfil" id="menuPerfil">
+            <ul>
+                <li>Alterar</li>
+                <li>Ajuda</li>
+                <li><a href="https://github.com/FelipeCardenazDeMelo" target="c_blank">Git Hub</a></li>
+                <li><a href="https://www.linkedin.com/in/felipe-cardenaz-de-melo-34072520b/" target="c_blank"> Meu Perfil </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="menu-lateral" id="menu">
+        <img src="assets/img/logo.svg" alt="Logo da MTS" class="menu-lateral_logo">
+        <a href="#" class="menu-lateral_link menu-lateral_link--inicio menu-lateral_link--ativo">Início</a>
+        <a href="#" class="menu-lateral_link menu-lateral_link--videos">Vídeos</a>
+        <a href="#" class="menu-lateral_link menu-lateral_link--picos">Picos</a>
+        <a href="#" class="menu-lateral_link menu-lateral_link--integrantes">Integrantes</a>
+        <a href="#" class="menu-lateral_link menu-lateral_link--camisas">Camisas</a>
+        <a href="#" class="menu-lateral_link menu-lateral_link--pinturas">Pinturas</a>
+    </nav>
+
+    <main>
+        <h2 class="titulo-pagina">Início</h2>
+        <article class="cartao cartao--destaque destaque-video" >
+            <img src="assets/img/banner-mobile_1.png" alt="banner cartão" class="cartao-imagem cartao-imagem--mobile">
+            <img src="assets/img/banner_1.png" alt="banner cartão" class="cartao-imagem cartao-imagem--desktop">
+            <div class="cartao_conteudo">
+                <p class="cartao_destaque">Vídeo em destaque</p>
+                <h3 class="cartao_titulo">MTS - Título</h3>
+                <p class="cartao_perfil">Felipe Melo</p>
+                <p class="cartao_info cartao_info--tempo">27 minutos</p>
+                <p class="cartao_info cartao_info--vizualizacao">240 vizualizações</p>
+                <button class="cartao_botao cartao_botao--play cartao_botao--destaque">Assistir Agora</button>
+            </div>
+        </article>
+        
+        <article class="cartao cartao--recentes videos-recentes">
+            <h3 class="cartao_titulo">Vídeos recentes</h3>
+            <a href="#" class="cartao_link">Ver todos</a>
+            <ul class="cartao_lista">
+                <li class="cartao_item">
+                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao_item-thumbnail">
+                    <h4 class="cartao_item-titulo"> MTS - Love machine</h4>
+                    <p class="cartao_item-perfil">Felipe Melo</p>
+                </li>
+
+                <li class="cartao_item">
+                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao_item-thumbnail">
+                    <h4 class="cartao_item-titulo"> MTS - Love machine</h4>
+                    <p class="cartao_item-perfil">Felipe Melo</p>
+                </li>
+
+                <li class="cartao_item">
+                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao_item-thumbnail">
+                    <h4 class="cartao_item-titulo"> MTS - Love machine</h4>
+                    <p class="cartao_item-perfil">Felipe Melo</p>
+                </li>
+
+                <li class="cartao_item">
+                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao_item-thumbnail">
+                    <h4 class="cartao_item-titulo"> MTS - Love machine</h4>
+                    <p class="cartao_item-perfil">Felipe Melo</p>
+                </li>
+
+                <li class="cartao_item">
+                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao_item-thumbnail">
+                    <h4 class="cartao_item-titulo"> MTS - Love machine</h4>
+                    <p class="cartao_item-perfil">Felipe Melo</p>
+                </li>
+
+            </ul>
+        </article>
+
+        <section class="secao secao-videos">
+            <h3 class="titulo-secao">Vídeos mais vistos</h3>
+            <article class="cartao" >
+                <img src="assets/img/video_1.png" alt="Video cartão" class="cartao-imagem">
+                <div class="cartao_conteudo">
+                    <p class="cartao_perfil">Luan Oliveira</p>
+                    <h3 class="cartao_titulo">How To - Flip</h3>
+                    <p class="cartao_info cartao_info--tempo">12 minutos</p>
+                    <button class="cartao_botao cartao_botao--play" aria-label="Assistir Agora"></button>
+                </div>
+            </article>
+
+            <article class="cartao" >
+                <img src="assets/img/video_2.png" alt="Video cartão" class="cartao-imagem">
+                <div class="cartao_conteudo">
+                    <p class="cartao_perfil">Luan Oliveira</p>
+                    <h3 class="cartao_titulo">How To - Flip</h3>
+                    <p class="cartao_info cartao_info--tempo">12 minutos</p>
+                    <button class="cartao_botao cartao_botao--play" aria-label="Assistir Agora"></button>
+                </div>
+            </article>
+
+            <article class="cartao" >
+                <img src="assets/img/video_3.png" alt="Video cartão" class="cartao-imagem">
+                <div class="cartao_conteudo">
+                    <p class="cartao_perfil">Luan Oliveira</p>
+                    <h3 class="cartao_titulo">How To - Flip</h3>
+                    <p class="cartao_info cartao_info--tempo">12 minutos</p>
+                    <button class="cartao_botao cartao_botao--play" aria-label="Assistir Agora"></button>
+                </div>
+            </article>
+
+            <article class="cartao" >
+                <img src="assets/img/video_4.png" alt="Video cartão" class="cartao-imagem">
+                <div class="cartao_conteudo">
+                    <p class="cartao_perfil">Luan Oliveira</p>
+                    <h3 class="cartao_titulo">How To - Flip</h3>
+                    <p class="cartao_info cartao_info--tempo">12 minutos</p>
+                    <button class="cartao_botao cartao_botao--play" aria-label="Assistir Agora"></button>
+                </div>
+            </article>
+        </section>
+
+        <article class="cartao cartao--recentes produtos-recentes">
+            <h3 class="cartao_titulo">Vídeos recentes</h3>
+            <a href="#" class="cartao_link">Ver todos</a>
+            <ul class="cartao_lista">
+                <li class="cartao_item">
+                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao_item-thumbnail">
+                    <h4 class="cartao_item-titulo"> MTS - Love machine</h4>
+                    <p class="cartao_item-perfil">Felipe Melo</p>
+                </li>
+
+                <li class="cartao_item">
+                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao_item-thumbnail">
+                    <h4 class="cartao_item-titulo"> MTS - Love machine</h4>
+                    <p class="cartao_item-perfil">Felipe Melo</p>
+                </li>
+
+                <li class="cartao_item">
+                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao_item-thumbnail">
+                    <h4 class="cartao_item-titulo"> MTS - Love machine</h4>
+                    <p class="cartao_item-perfil">Felipe Melo</p>
+                </li>
+
+                <li class="cartao_item">
+                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao_item-thumbnail">
+                    <h4 class="cartao_item-titulo"> MTS - Love machine</h4>
+                    <p class="cartao_item-perfil">Felipe Melo</p>
+                </li>
+
+                <li class="cartao_item">
+                    <img src="assets/img/miniatura_1.png" alt="Thumbnail" class="cartao_item-thumbnail">
+                    <h4 class="cartao_item-titulo"> MTS - Love machine</h4>
+                    <p class="cartao_item-perfil">Felipe Melo</p>
+                </li>
+
+            </ul>
+        </article>
+
+        <article class="cartao cartao--destaque destaque-produtos" >
+            <img src="assets/img/banner-mobile_2.png" alt="banner cartão" class="cartao-imagem cartao-imagem--mobile">
+            <img src="assets/img/banner_2.png" alt="banner cartão" class="cartao-imagem cartao-imagem--desktop">
+            <div class="cartao_conteudo">
+                <p class="cartao_destaque">Vídeo em destaque</p>
+                <h3 class="cartao_titulo">MTS - Título</h3>
+                <p class="cartao_perfil">Felipe Melo</p>
+                <p class="cartao_info cartao_info--tempo">27 minutos</p>
+                <p class="cartao_info cartao_info--vizualizacao">240 vizualizações</p>
+                <button class="cartao_botao cartao_botao--play cartao_botao--destaque">Assistir Agora</button>
+            </div>
+        </article>
+        <section class="secao secao-produtos">
+            <h3 class="titulo-secao">Vídeos mais vistos</h3>
+            <article class="cartao" >
+                <img src="assets/img/video_1.png" alt="Video cartão" class="cartao-imagem">
+                <div class="cartao_conteudo">
+                    <p class="cartao_perfil">Luan Oliveira</p>
+                    <h3 class="cartao_titulo">How To - Flip</h3>
+                    <p class="cartao_info cartao_info--tempo">12 minutos</p>
+                    <button class="cartao_botao cartao_botao--play" aria-label="Assistir Agora"></button>
+                </div>
+            </article>
+
+            <article class="cartao" >
+                <img src="assets/img/video_1.png" alt="Video cartão" class="cartao-imagem">
+                <div class="cartao_conteudo">
+                    <p class="cartao_perfil">Luan Oliveira</p>
+                    <h3 class="cartao_titulo">How To - Flip</h3>
+                    <p class="cartao_info cartao_info--tempo">12 minutos</p>
+                    <button class="cartao_botao cartao_botao--play" aria-label="Assistir Agora"></button>
+                </div>
+            </article>
+
+            <article class="cartao" >
+                <img src="assets/img/video_1.png" alt="Video cartão" class="cartao-imagem">
+                <div class="cartao_conteudo">
+                    <p class="cartao_perfil">Luan Oliveira</p>
+                    <h3 class="cartao_titulo">How To - Flip</h3>
+                    <p class="cartao_info cartao_info--tempo">12 minutos</p>
+                    <button class="cartao_botao cartao_botao--play" aria-label="Assistir Agora"></button>
+                </div>
+            </article>
+
+            <article class="cartao" >
+                <img src="assets/img/video_1.png" alt="Video cartão" class="cartao-imagem">
+                <div class="cartao_conteudo">
+                    <p class="cartao_perfil">Luan Oliveira</p>
+                    <h3 class="cartao_titulo">How To - Flip</h3>
+                    <p class="cartao_info cartao_info--tempo">12 minutos</p>
+                    <button class="cartao_botao cartao_botao--play" aria-label="Assistir Agora"></button>
+                </div>
+            </article>
+        </section>
+    </main>
+    
+<script src="index.js"></script>
+</body>
+</html>
